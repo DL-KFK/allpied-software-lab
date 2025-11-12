@@ -19,12 +19,71 @@
 <section class="instructions">
   <div style="margin: 3rem">
   <h2>Як додати свій інструмент</h2>
-  <ol>
-    <li>Зробіть <strong>fork</strong> цього репозиторію на GitHub.</li>
-    <li>Додайте свій запис у файл <code>tools.json</code> за прикладом.</li>
-    <li>Створіть коміт із зрозумілим повідомленням (наприклад, <code>add: tool for system monitoring</code>).</li>
-    <li>Зробіть <strong>pull request</strong> для перевірки.</li>
-  </ol>
+<h4><strong>1. Перейти до репозиторію</strong></h4>
+<p>Створити облаковий запис на GitHub, або
+  зайти в існуючий, якщо такий наявний.</p>
+<p>Відкрити спільний репозиторій у
+  браузері:<br><a class="decorated-link"
+    href="https://dl-kfk.github.io/allpied-software-lab/" target="_new"
+    rel="noopener">https://dl-kfk.github.io/allpied-software-lab/</a><br>або його вихідний код:<br><a class="decorated-link"
+    href="https://github.com/dl-kfk/allpied-software-lab" target="_new"
+    rel="noopener">https://github.com/dl-kfk/allpied-software-lab</a></p>
+<p>Натиснути <strong>"Fork"</strong>, щоб створити власну копію проєкту у своєму
+  GitHub-акаунті.</p>
+<h4><strong>2. Клонування репозиторію</strong></h4>
+<p>Запустити Git на локальному комп'ютері,
+  скопіювати посилання на свій fork і відкрити термінал:</p>
+<pre class="language-bash"><code>git clone https://github.com/&lt;акаунт_студента&gt;/allpied-software-lab.git
+cd allpied-software-lab
+</code></pre>
+<h4><strong>3. Створення гілки</strong></h4>
+<p>Створити власну гілку (branch) для внесення
+  змін:</p>
+<pre class="language-bash"><code>git checkout -b student_&lt;прізвище&gt;
+</code></pre>
+<h4><strong>4. Додати свій запис</strong></h4>
+<p>Відкрити файл <code>tools.json</code> у будь-якому редакторі коду (VS Code,
+  Notepad++, Nano).<br>Додати свій запис у
+  форматі:</p>
+<pre class="language-json"><code>{
+  "name": "Назва утиліти або програми",
+  "description": "Короткий опис (що робить, для чого застосовується)",
+  "author": "Прізвище І.П."
+}
+</code></pre>
+<p><strong>Порада:</strong> не видаляйте інші записи, а лише додавайте
+  свій перед останньою дужкою (не забудьте про кому між об’єктами).</p>
+<h4><strong>5. Закомітити зміни</strong></h4>
+<p>Збережіть файл і в терміналі виконайте:</p>
+<pre class="language-bash"><code>git add tools.json
+git commit -m "Додав утиліту від &lt;Прізвище І.&gt;"
+</code></pre>
+<h4><strong>6. Відправка змін</strong></h4>
+<pre class="language-bash"><code>git push origin student_&lt;прізвище&gt;
+</code></pre>
+<h4><strong>7. Створити Pull Request</strong></h4>
+<ol>
+  <li>
+    <p>Відкрити свій fork на GitHub.</p>
+  </li>
+  <li>
+    <p>Натиснути <strong>Compare &amp; pull request</strong>.</p>
+  </li>
+  <li>
+    <p>Додати короткий опис і натиснути
+      <strong>Create pull request</strong>.
+    </p>
+  </li>
+</ol>
+<p>Після перевірки викладачем зміни буде
+  об’єднано до основного проєкту, і можна буде побачити власний внесок на
+  публічній сторінці.</p>
+<h4 ><strong>Крок 8. Перевірка результату</strong></h4>
+<p>Через 1–2 хвилини після об'єднання
+  викладачем сторінка оновиться, перевірити можна за посиланням:<br><a class="decorated-link"
+    href="https://dl-kfk.github.io/allpied-software-lab/" target="_new"
+    rel="noopener" data-start="4231"
+    data-end="4327">https://dl-kfk.github.io/allpied-software-lab/</a></p>
   <p><em>Порада:</em> слідкуйте, щоб JSON залишався валідним. Можна перевірити через <a href="https://jsonlint.com" target="_blank">JSONLint</a>.</p>
   </div>
 </section>
