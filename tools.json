@@ -8,5 +8,10 @@
     "name": "Veeam Agent",
     "description": "Інструмент резервного копіювання даних для Windows і Linux.",
     "author": "Викладач"
+  },
+  {
+    "name": "Notepad",
+    "description": "Блокнот",
+    "author": "Студент 741 Тест Тестенко"
   }
 ]
